@@ -50,6 +50,8 @@ background:#2ba6cb;
 }
 
 #navigation{
+	background:black;
+	opacity:.6;
 	padding-bottom:5px;
 	margin-top:25px;
 	margin-bottom:25px;
