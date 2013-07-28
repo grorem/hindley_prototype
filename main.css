@@ -22,9 +22,15 @@ img, object, embed, video {
 
 
 body{
-	background:url('img/fabric_of_squares_gray.png');
+	background:url('img/SonomaCounty.jpg');
 	font-family:roboto;
 	}
+#main{
+	background:url('img/fabric_of_squares_gray.png');
+	opacity:.96;
+	}
+
+
 
 call{
 	
@@ -33,23 +39,37 @@ call{
 	}
 	
 call2{
-	color:#2ba6cb;
+	color:#6c242b;
 	font-size:18px;
 	
 	}
 
 h1{
-	
-	font-size:30px;
-	
+	font-size:44px;
+	font-weight:bold;
 	}
 
 #top{
 height:7px;
-background:#2ba6cb;	
+background:#6c242b;	
 }
 
+
+#search{
+position:absolute;	
+left:975px;	
+top:205px;
+padding:5px;
+background:#6c242b;
+	
+	-moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+	}
+
 #navigation{
+	
 	
 	padding-bottom:5px;
 	margin-top:25px;
@@ -59,11 +79,16 @@ background:#2ba6cb;
 	height:55px;
 }
 
+#navigation img{
+	max-width:20px;
+	}
+
 #nav li{
+	
 	float:left;
 	list-style:none;
-	padding:10px 13px 10px 13px;
-	
+	padding:10px 17px 10px 17px;
+	margin-left:20px;
 	font-size:14px;
 	font-weight:bold;
 	
@@ -72,6 +97,7 @@ background:#2ba6cb;
 #nav a{
 	height:25px;
 	color:black;
+	
 	text-decoration: none;
 	
 }
@@ -84,7 +110,7 @@ background:#2ba6cb;
 
 #nav li:hover{
 	
-	background:#2ba6cb;
+	background:green;
 	height:18px;
 	-moz-border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -92,32 +118,63 @@ background:#2ba6cb;
     border-radius: 4px;
 }
 
+
+.dropdown{
+	position:absolute;
+	
+	background:red;
+	
+	}
+
+.dropdown li{
+	clear:right;
+	float:none;
+	list-style:none;
+	
+	}
+	
+	.dropdown a{
+	text-decoration: none;
+	
+	}
+
 #leftheader{
 	height:125px;
-	width:295px;
+	
 	float:left;
 	}
 
 .header_left{
-	
+	width:25%;
 	
 	}
 	
 .header_mid{
+	color:#6c242b;
 	
+	width:50%;
+	
+	-moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
 	}
 
 .header_right{
-	
+	width:25%;
 	
 	}	
 
 
-
+#contentarea{
+	background:url('img/fabric_of_squares_gray.png');
+	opacity:.96;
+	}
 
 .contents{
 	
-	width:650px;
+	width:80%;
+	
 	height:100%;
 	float:left;
 	padding:25px;
@@ -133,7 +190,7 @@ background:#2ba6cb;
 .sidebar{
 	padding:10px;
 	
-	width:161px;
+	max-width:10%;
 	height:100%;
 	float:left;
 	
@@ -141,7 +198,7 @@ background:#2ba6cb;
 	
 	
 .reasons li{
-	width:250px;
+	width:30%;
 	float:left;
 	list-style:none;
 	height:200px;
@@ -180,7 +237,7 @@ background:#2ba6cb;
 .gridContainer {
 	margin-left: auto;
 	margin-right: auto;
-	width: 87.36%;
+	width: 1045px;
 	padding-left: 1.82%;
 	padding-right: 1.82%;
 }

@@ -24,14 +24,30 @@ Do the following if you're using your customized build of modernizr (http://www.
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 <script src="respond.min.js"></script>
+
+ <script type="text/javascript">
+		$(document).ready(function() {
+		
+		$("#searching").click(function() {
+			$("#search").slideToggle(100);
+			
+		});
+		
+		});
+</script>
 </head>
 <body>
-<div class="gridContainer clearfix">
+<div id="main" class="gridContainer clearfix">
  <div id="top"> </div>
   <div id="leftheader" class="header_left">
   
   		<center><h4><call2>Call Now</call2> for a Free<br /> Bankrupcy Consultation</h4></center>
+        
+        <center><call2>Hablamos Español</call2><br /><br /></center>
+        
+       <center><call2>我们讲普通话</call2></center> 
   
   </div>
    
@@ -45,33 +61,42 @@ Do the following if you're using your customized build of modernizr (http://www.
    
    <div id="leftheader" class="header_right">
    			
-   		<center><h4>Santa Rosa: <call>707.575.3700</call><br /><br />
-        San Francisco: <call>415.202.0800</call><br /><br />
-        San Jose: <call>408.673.808</call></h4></center>
+   		<center><h4>Santa Rosa: <call2>707.575.3700</call2><br /><br />
+        San Francisco: <call2>415.202.0800</call2><br /><br />
+        San Jose: <call2>408.673.808</call2></h4></center>
    
    </div>
  
   
   <div id="navigation">
   	<ul id="nav">
-    	<a href="#"><li>About Us</li></a>
-        <a href="#"><li>What to expect</li></a>
+    	<a href="#"><li>Why Choose US?</li></a>
         <a href="#"><li>Bankruptcy</li></a>
-        <a href="#"><li>Tax Debt</li></a>
+                        
+                	
+        		
+        <a href="#"><li>Tax/IRS</li></a>
         <a href="#"><li>Foreclosure</li></a>
-        <a href="#"><li>Blog</li></a>
-        <a href="#"><li>Creditors</li></a>
-        <a href="#"><li>FAQs</li></a>
-        <a href="#"><li>Resources</li></a>
+        <a href="#"><li>Learning Center</li></a>
+        <a href="#"><li>The Firm</li></a>
+        <a href="#"><li>Contact Us</li></a>
+       <div id="searching">
+        <a href="#"><li><img src="img/search-01.png" /></li></a>
       
         
   		
     
     </ul>
+    
   </div>
   
- 
-  <div class="contents">
+  <div id="search" style="display:none;">
+  <input id="Field1" name="Field1" type="text" class="field text large" value="Search Keyword" maxlength="255" tabindex="1" onkeyup="handleInput(this); " onchange="handleInput(this);">
+  </div>
+  </div>
+  
+ <div id="contentarea" class="gridContainer clearfix">
+  <div class="contents" >
   <img style="float:left;" src="img/img.gif" />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
   
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br /><br /><br />
@@ -104,29 +129,29 @@ Do the following if you're using your customized build of modernizr (http://www.
   </form>
   
   
- 
-  </div>
+ </div>
+  
   <div id="footer">
   
   	 <ul class="reasons">
-  	<li><h3>Experience</h3>Over 25 years specializing in bankruptcy with thousands of successful cases representing debtors and creditors. Put our experience to work for you to get the fresh start you deserve with people you can trust.</li>
+  	<li><call2>Experience</call2><br />Over 25 years specializing in bankruptcy with thousands of successful cases representing debtors and creditors. Put our experience to work for you to get the fresh start you deserve with people you can trust.</li>
     
-    <li><h3>Affordable</h3>Attorneys fees and court costs can be split into payments. However, please be advised that all fees must be paid in full before a case can be filed.</li>
+    <li><call2>Affordable</call2><br />Attorneys fees and court costs can be split into payments. However, please be advised that all fees must be paid in full before a case can be filed.</li>
     
-    <li><h3>Flexible</h3>Weekend and evening appointments are available for your convenience. </li>
+    <li><call2>Flexible</call2><br />Weekend and evening appointments are available for your convenience. </li>
     
-    <li><h3>Informed Choices</h3>Avoid making bad decisions or hiring an inexperienced attorney, or paralegal, that could end up costing you more money or prevent you from getting a discharge.</li>
+    <li><call2>Informed Choices</call2><br />Avoid making bad decisions or hiring an inexperienced attorney, or paralegal, that could end up costing you more money or prevent you from getting a discharge.</li>
     
-    <li><h3>Negotiate</h3>Avoid bankruptcy and reach settlements with your creditors. <h3>Translation</h3>Available by appointment for Spanish, Mandarin and Cantonese.</li>
+    <li><call2>Negotiate</call2><br />Avoid bankruptcy and reach settlements with your creditors.<br /><br /> <call2>Translation</call2><br />Available by appointment for Spanish, Mandarin and Cantonese.</li>
     
-    <li><h3>Counsel</h3>Receive prompt, considerate service and sympathetic personal attention. This is one of the most stressful times in your life; you should choose an attorney's office that is sensitive to your situation and can provide you the guidance you need.</li>
+    <li><call2>Counsel</call2><br />Receive prompt, considerate service and sympathetic personal attention. This is one of the most stressful times in your life; you should choose an attorney's office that is sensitive to your situation and can provide you the guidance you need.</li>
     
     
     
     
  	 
   </ul>
-  
+  </div>
   </div>
   
   
