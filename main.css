@@ -26,7 +26,7 @@ body{
 	font-family:roboto;
 	}
 #main{
-	background:url('img/fabric_of_squares_gray.png');
+	
 	opacity:.96;
 	}
 
@@ -50,7 +50,7 @@ h1{
 	}
 
 #top{
-height:7px;
+height:0px;
 background:#6c242b;	
 }
 
@@ -69,17 +69,22 @@ background:#6c242b;
 	}
 
 #navigation{
-	
-	
+	background:#6c242b;
+	-moz-border-radius: 0px 0px 7px 7px;
+    -webkit-border-radius: 0px 0px 7px 7px;
+    -khtml-border-radius: 0px 0px 7px 7px;
+    border-radius: 0px 0px 7px 7px;
 	padding-bottom:5px;
-	margin-top:25px;
+	
 	margin-bottom:25px;
-	border-bottom:1px solid;
-	border-top:1px solid;
+	
+	border-top:2px solid;
+	border-color:#6c242b;
 	height:55px;
 }
 
 #navigation img{
+
 	max-width:20px;
 	}
 
@@ -87,7 +92,7 @@ background:#6c242b;
 	
 	float:left;
 	list-style:none;
-	padding:10px 17px 10px 17px;
+	padding:10px 12px 10px 12px;
 	margin-left:20px;
 	font-size:14px;
 	font-weight:bold;
@@ -96,7 +101,7 @@ background:#6c242b;
 
 #nav a{
 	height:25px;
-	color:black;
+	color:white;
 	
 	text-decoration: none;
 	
@@ -139,8 +144,8 @@ background:#6c242b;
 	}
 
 #leftheader{
-	height:125px;
-	
+	height:160px;
+	background:url('img/fabric_of_squares_gray.png');
 	float:left;
 	}
 
@@ -154,10 +159,7 @@ background:#6c242b;
 	
 	width:50%;
 	
-	-moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -khtml-border-radius: 4px;
-    border-radius: 4px;
+	
 	}
 
 .header_right{
@@ -169,6 +171,10 @@ background:#6c242b;
 #contentarea{
 	background:url('img/fabric_of_squares_gray.png');
 	opacity:.96;
+	-moz-border-radius: 7px 7px 0px 0px;
+    -webkit-border-radius: 7px 7px 0px 0px;
+    -khtml-border-radius: 7px 7px 0px 0px;
+    border-radius: 7px 7px 0px 0px;
 	}
 
 .contents{
