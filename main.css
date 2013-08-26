@@ -22,15 +22,20 @@ img, object, embed, video {
 
 
 body{
-	background:url('img/SonomaCounty.jpg');
+	margin-top:75px;
+	background: #EDEDED;
 	font-family:roboto;
 	}
 #main{
 	
-	opacity:.96;
+	
 	}
 
 
+.logo {
+	margin-top:-50px;
+	
+	}
 
 call{
 	
@@ -39,7 +44,7 @@ call{
 	}
 	
 call2{
-	color:#6c242b;
+	color: #6c242b;
 	font-size:18px;
 	
 	}
@@ -51,7 +56,7 @@ h1{
 
 #top{
 height:0px;
-background:#6c242b;	
+	
 }
 
 
@@ -60,7 +65,7 @@ position:absolute;
 left:975px;	
 top:205px;
 padding:5px;
-background:#6c242b;
+background:#83AD67;
 	
 	-moz-border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -68,90 +73,155 @@ background:#6c242b;
     border-radius: 4px;
 	}
 
-#navigation{
-	background:#6c242b;
-	-moz-border-radius: 0px 0px 7px 7px;
-    -webkit-border-radius: 0px 0px 7px 7px;
-    -khtml-border-radius: 0px 0px 7px 7px;
-    border-radius: 0px 0px 7px 7px;
-	padding-bottom:5px;
-	
-	margin-bottom:25px;
-	
-	border-top:2px solid;
-	border-color:#6c242b;
-	height:55px;
-}
+
 
 #navigation img{
 
 	max-width:20px;
 	}
 
-#nav li{
+.menu,
+.menu ul,
+.menu li,
+.menu a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
 	
-	float:left;
-	list-style:none;
-	padding:10px 10px 10px 10px;
-	margin-left:20px;
-	font-size:14px;
-	font-weight:bold;
+}
+ 
+.menu {
+	
+    height: 40px;
+    width: 100%;
+ margin-top:-40px;
+    background: #737577;
+   
+ 
+    
+}
+ 
+.menu li {
+    position: relative;
+    list-style: none;
+    float: left;
+    display: block;
+    height: 40px;
 	
 }
 
-#nav a{
-	height:25px;
-	color:white;
-	
-	text-decoration: none;
-	
+
+.menu li a {
+    display: block;
+    padding: 0 25px;
+    margin: 6px 0;
+    line-height: 28px;
+    text-decoration: none;
+ 
+    
+    border-right: 1px solid #4f5058;
+ 
+    font-family: Helvetica, Arial, sans-serif;
+   
+    font-size: 15px;
+ 
+    color: #f3f3f3;
+    
+ 
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+ 
+.menu li:first-child a { border-left: none; }
+.menu li:last-child a{ border-right: none; }
+ 
+.menu li:hover > a { color: #8fde62; }
+
+
+.menu ul {
+    position: absolute;
+    top: 40px;
+    left: 0;
+ 
+    opacity: 0;
+    background: #1f2024;
+ 
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+ 
+    -webkit-transition: opacity .25s ease .1s;
+    -moz-transition: opacity .25s ease .1s;
+    -o-transition: opacity .25s ease .1s;
+    -ms-transition: opacity .25s ease .1s;
+    transition: opacity .25s ease .1s;
+}
+ 
+.menu li:hover > ul { opacity: 1; }
+ 
+.menu ul li {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+
+    -webkit-transition: height .25s ease .1s;
+    -moz-transition: height .25s ease .1s;
+    -o-transition: height .25s ease .1s;
+    -ms-transition: height .25s ease .1s;
+    transition: height .25s ease .1s;
+}
+ 
+.menu li:hover > ul li {
+    height: 36px;
+    overflow: visible;
+    padding: 0;
 }
 
-#nav a:hover{
-	color:white;
-	text-decoration: none;
-	
+.menu ul li a {
+    width: 100px;
+    padding: 4px 0 4px 40px;
+    margin: 0;
+ 
+    border: none;
+    border-bottom: 1px solid #353539;
 }
+ 
+.menu ul li:last-child a { border: none; }
 
-#nav li:hover{
+
+.subnav{
+	z-index:1;
 	
-	background:green;
-	height:18px;
-	-moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -khtml-border-radius: 4px;
-    border-radius: 4px;
-}
-
-
-.dropdown{
-	position:absolute;
-	
-	background:red;
 	
 	}
 
-.dropdown li{
-	clear:right;
-	float:none;
-	list-style:none;
-	
-	}
-	
-	.dropdown a{
-	text-decoration: none;
+
+
+
+
+
+
+
+.header {
+background:url('img/header.png') no-repeat;
+	background-size: 100%;
+	height:150px;
 	
 	}
 
 #leftheader{
-	height:160px;
-	background:url('img/fabric_of_squares_gray.png');
+	height:120px;
+	
 	float:left;
 	}
 
 .header_left{
 	width:25%;
-	
+	padding-top:70px;
 	}
 	
 .header_mid{
@@ -164,27 +234,32 @@ background:#6c242b;
 
 .header_right{
 	width:25%;
-	
+	padding-top:30px;
 	}	
 
 
 #contentarea{
-	background:url('img/fabric_of_squares_gray.png');
-	opacity:.96;
+	
+	
 	-moz-border-radius: 7px 7px 0px 0px;
     -webkit-border-radius: 7px 7px 0px 0px;
     -khtml-border-radius: 7px 7px 0px 0px;
     border-radius: 7px 7px 0px 0px;
 	}
 
+
+
 .contents{
+	background: #81AA65;
+	font-size:15px;
+	line-height:20px;
+	color:white;
+	width:75%;
 	
-	width:80%;
-	
-	height:100%;
+	height:720px;
 	float:left;
 	padding:25px;
-	border-right:1px groove;
+	border-right:1px solid;
 	}
 	
 	.contents img{
@@ -195,9 +270,10 @@ background:#6c242b;
 
 .sidebar{
 	padding:10px;
+	background: #81AA65;
 	
-	max-width:10%;
-	height:100%;
+	max-width:19%;
+	height:750px;
 	float:left;
 	
 	}
@@ -215,8 +291,18 @@ background:#6c242b;
 
 #footer{
 	border-top:1px groove;
-	
+	background:white;
 	}
+	
+#footer img{
+	margin:0 50px;
+	}
+	
+	.subfooter{
+		padding:25px;
+		background:#81AA65;
+		
+		}
 	
 	
 .field text large{
@@ -416,11 +502,15 @@ background:#6c242b;
 
 @media only screen and (min-width: 769px) {
 .gridContainer {
-	width: 88.5%;
+	
+	width: 75%;
 	max-width: 1232px;
 	padding-left: 0.75%;
 	padding-right: 0.75%;
 	margin: auto;
+	
+	margin-top:50px;
+	
 }
 #LayoutDiv1 {
 	clear: both;
@@ -499,4 +589,6 @@ background:#6c242b;
 	width: 100%;
 	display: block;
 }
-}
+
+
+
