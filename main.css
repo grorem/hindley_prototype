@@ -45,7 +45,7 @@ call{
 	
 call2{
 	color: #6c242b;
-	font-size:18px;
+	font-size:14px;
 	
 	}
 
@@ -280,7 +280,7 @@ background:url('img/header.png') no-repeat;
 	
 	
 .reasons li{
-	width:30%;
+	width:25%;
 	float:left;
 	list-style:none;
 	height:200px;
@@ -295,7 +295,8 @@ background:url('img/header.png') no-repeat;
 	}
 	
 #footer img{
-	margin:0 50px;
+	
+	margin:0 40px;
 	max-width:220px;
 	}
 	
