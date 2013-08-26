@@ -114,7 +114,7 @@ background:#83AD67;
 
 .menu li a {
     display: block;
-    padding: 0 25px;
+    padding: 0 20px;
     margin: 6px 0;
     line-height: 28px;
     text-decoration: none;
@@ -182,8 +182,8 @@ background:#83AD67;
 }
 
 .menu ul li a {
-    width: 100px;
-    padding: 4px 0 4px 40px;
+    width: 150px;
+    padding: 4px 0 4px 4px;
     margin: 0;
  
     border: none;
@@ -296,7 +296,7 @@ background:url('img/header.png') no-repeat;
 	
 #footer img{
 	margin:0 50px;
-	max-width:250px;
+	max-width:220px;
 	}
 	
 	.subfooter{
