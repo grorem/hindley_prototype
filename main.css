@@ -1,10 +1,16 @@
+.all {
+	
+	max-width:1080px;
+	margin: auto;
+	}
+
 @charset "utf-8";
 /* Simple fluid media
    Note: Fluid media requires that you remove the media's height and width attributes from the HTML
    http://www.alistapart.com/articles/fluid-images/ 
 */
 img, object, embed, video {
-	max-width: 100%;
+	max-width: 88%;
 }
 /* IE 6 does not support max-width so default to width 100% */
 .ie6 img {
@@ -22,7 +28,7 @@ img, object, embed, video {
 
 
 body{
-	margin-top:75px;
+	
 	background: #EDEDED;
 	font-family:roboto;
 	}
@@ -33,7 +39,7 @@ body{
 
 
 .logo {
-	margin-top:-50px;
+	margin-top:-20px;
 	
 	}
 
@@ -222,9 +228,10 @@ background:#83AD67;
 
 #consultation{
 	color:white;
-	max-width:86.3%;
+	max-width:95.5%;
 	padding:25px;
 	background:#83AD67;
+	margin-left:10px;
 	}
 
 
@@ -268,8 +275,8 @@ background:url('img/header.png') no-repeat;
 
 #contentarea{
 	background:#81AA65;
-	width:88.3%;
-	
+	width:98.5%;
+	margin-left:8px;
 	}
 
 #logos li{
@@ -311,8 +318,9 @@ background:url('img/header.png') no-repeat;
 	
 
 #reasons{
-	max-width:88%;
+	max-width:98.5%;
 	background:white;
+	margin-left:10px;
 	}
 .reasons li{
 width: 29%;
@@ -325,10 +333,11 @@ padding: 15px;
 
 
 #footer{
-	
+	margin:auto;
 	background:#81AA65;
-	width:700px;
-	
+	width:98.5%;
+	padding:15px;
+	color:white;
 	}
 	
 #footer img{
@@ -537,18 +546,20 @@ padding: 15px;
 }
 }
 
+
+
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 
 @media only screen and (min-width: 769px) {
 .gridContainer {
 	
-	width: 75%;
+	width: 100%;
 	max-width: 1232px;
 	padding-left: 0.75%;
 	padding-right: 0.75%;
 	margin: auto;
 	
-	margin-top:50px;
+	
 	
 }
 #LayoutDiv1 {
@@ -624,8 +635,8 @@ padding: 15px;
 #footer {
 	clear: both;
 	float: left;
-	margin-left: 0;
-	width: 100%;
+	margin: auto;
+	width:98.5%;
 	display: block;
 }
 
